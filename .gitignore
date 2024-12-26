@@ -1,2 +1,5 @@
+#remove cache for clang
 .cache/
+
+#remove compiled object file
 *.o
