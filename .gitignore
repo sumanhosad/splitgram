@@ -3,3 +3,6 @@
 
 #remove compiled object file
 *.o
+
+#dont add the builds
+.builds/
