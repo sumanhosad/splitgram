@@ -1,0 +1,18 @@
+.Hwindow {
+  background-color: #000000;
+}
+
+.Hbox {
+  background-color: #141414;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.Hbox1 {
+  background-color: red;
+}
+
+.Hbox2 {
+  background-color: blue;
+}
