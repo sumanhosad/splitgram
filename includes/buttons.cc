@@ -53,7 +53,7 @@ Buttons::Buttons() {
   set_child(m_button);
 }
 
-Buttons::~Buttons() { std::cout << "Destrotying the button!!!"; }
+Buttons::~Buttons() { std::cout << "Destrotying the button!!!!!"; }
 
 void Buttons::on_button_clicked() {
   std::cout << "button clicked" << std::endl;
