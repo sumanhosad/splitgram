@@ -1,34 +1,23 @@
-# Set the minimum version of CMake required
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.31)
 
-# Set the project name to 'splitgram'
-project(splitgram)
+#project name
+project(Splitgram)
 
-# Set the C++ standard
+#specify c++ standard
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Find the required GTKmm package
+#include directories
+include_directories(includes)
+
+#add executables
+add_executable(Splitgram main.cpp src/home.cc)
+
+# Find and link GTKMM
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTKMM REQUIRED gtkmm-4.0)
 
-# Add your source files (main.cpp and home.cc together)
-set(SOURCES
-    main.cpp
-    includes/home.cc  # Include home.cc here so it's compiled and linked
-)
-
-# Add the executable (this will create the splitgram executable)
-add_executable(splitgram ${SOURCES})
-
-# Link the GTKmm libraries
-target_link_libraries(splitgram PRIVATE ${GTKMM_LIBRARIES})
-
-# Include necessary directories
-target_include_directories(splitgram PRIVATE ${GTKMM_INCLUDE_DIRS} includes)
-
-# Optionally, if you have additional include directories
-# target_include_directories(splitgram PRIVATE includes)
-
-# Install command if needed
-# install(TARGETS splitgram DESTINATION /usr/local/bin)
+include_directories(${GTKMM_INCLUDE_DIRS})
+link_directories(${GTKMM_LIBRARY_DIRS})
+target_link_libraries(Splitgram ${GTKMM_LIBRARIES})
 

@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/injustice/Documents/projects/splitgram/includes/home.cc" "CMakeFiles/home_exec.dir/includes/home.cc.o" "gcc" "CMakeFiles/home_exec.dir/includes/home.cc.o.d"
-  "" "home_exec" "gcc" "CMakeFiles/home_exec.dir/link.d"
+  "/home/injustice/Documents/projects/splitgram/main.cpp" "CMakeFiles/Splitgram.dir/main.cpp.o" "gcc" "CMakeFiles/Splitgram.dir/main.cpp.o.d"
+  "/home/injustice/Documents/projects/splitgram/src/home.cc" "CMakeFiles/Splitgram.dir/src/home.cc.o" "gcc" "CMakeFiles/Splitgram.dir/src/home.cc.o.d"
+  "" "Splitgram" "gcc" "CMakeFiles/Splitgram.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

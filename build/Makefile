@@ -92,6 +92,13 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/injustice/Documents/projects/splitgram/build/CMakeFiles 0
 .PHONY : all
 
+# The main codegen target
+codegen: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/injustice/Documents/projects/splitgram/build/CMakeFiles /home/injustice/Documents/projects/splitgram/build//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/injustice/Documents/projects/splitgram/build/CMakeFiles 0
+.PHONY : codegen
+
 # The main clean target
 clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
@@ -117,48 +124,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named splitgram
+# Target rules for targets named Splitgram
 
 # Build rule for target.
-splitgram: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 splitgram
-.PHONY : splitgram
+Splitgram: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Splitgram
+.PHONY : Splitgram
 
 # fast build rule for target.
-splitgram/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/build
-.PHONY : splitgram/fast
-
-includes/home.o: includes/home.cc.o
-.PHONY : includes/home.o
-
-# target to build an object file
-includes/home.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/includes/home.cc.o
-.PHONY : includes/home.cc.o
-
-includes/home.i: includes/home.cc.i
-.PHONY : includes/home.i
-
-# target to preprocess a source file
-includes/home.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/includes/home.cc.i
-.PHONY : includes/home.cc.i
-
-includes/home.s: includes/home.cc.s
-.PHONY : includes/home.s
-
-# target to generate assembly for a file
-includes/home.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/includes/home.cc.s
-.PHONY : includes/home.cc.s
+Splitgram/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/build
+.PHONY : Splitgram/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -166,7 +149,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,8 +157,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/home.o: src/home.cc.o
+.PHONY : src/home.o
+
+# target to build an object file
+src/home.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/src/home.cc.o
+.PHONY : src/home.cc.o
+
+src/home.i: src/home.cc.i
+.PHONY : src/home.i
+
+# target to preprocess a source file
+src/home.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/src/home.cc.i
+.PHONY : src/home.cc.i
+
+src/home.s: src/home.cc.s
+.PHONY : src/home.s
+
+# target to generate assembly for a file
+src/home.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/src/home.cc.s
+.PHONY : src/home.cc.s
 
 # Help Target
 help:
@@ -185,13 +192,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... splitgram"
-	@echo "... includes/home.o"
-	@echo "... includes/home.i"
-	@echo "... includes/home.s"
+	@echo "... Splitgram"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/home.o"
+	@echo "... src/home.i"
+	@echo "... src/home.s"
 .PHONY : help
 
 

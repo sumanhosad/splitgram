@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/injustice/Documents/projects/splitgram/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/splitgram.dir/all
+all: CMakeFiles/Splitgram.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/splitgram.dir/codegen
+codegen: CMakeFiles/Splitgram.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/splitgram.dir/clean
+clean: CMakeFiles/Splitgram.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/splitgram.dir
+# Target rules for target CMakeFiles/Splitgram.dir
 
 # All Build rule for target.
-CMakeFiles/splitgram.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/injustice/Documents/projects/splitgram/build/CMakeFiles --progress-num=1,2,3 "Built target splitgram"
-.PHONY : CMakeFiles/splitgram.dir/all
+CMakeFiles/Splitgram.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/injustice/Documents/projects/splitgram/build/CMakeFiles --progress-num=1,2,3 "Built target Splitgram"
+.PHONY : CMakeFiles/Splitgram.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/splitgram.dir/rule: cmake_check_build_system
+CMakeFiles/Splitgram.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/injustice/Documents/projects/splitgram/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/splitgram.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Splitgram.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/injustice/Documents/projects/splitgram/build/CMakeFiles 0
-.PHONY : CMakeFiles/splitgram.dir/rule
+.PHONY : CMakeFiles/Splitgram.dir/rule
 
 # Convenience name for target.
-splitgram: CMakeFiles/splitgram.dir/rule
-.PHONY : splitgram
+Splitgram: CMakeFiles/Splitgram.dir/rule
+.PHONY : Splitgram
 
 # codegen rule for target.
-CMakeFiles/splitgram.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/injustice/Documents/projects/splitgram/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target splitgram"
-.PHONY : CMakeFiles/splitgram.dir/codegen
+CMakeFiles/Splitgram.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/injustice/Documents/projects/splitgram/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target Splitgram"
+.PHONY : CMakeFiles/Splitgram.dir/codegen
 
 # clean rule for target.
-CMakeFiles/splitgram.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/splitgram.dir/build.make CMakeFiles/splitgram.dir/clean
-.PHONY : CMakeFiles/splitgram.dir/clean
+CMakeFiles/Splitgram.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Splitgram.dir/build.make CMakeFiles/Splitgram.dir/clean
+.PHONY : CMakeFiles/Splitgram.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,8 +1,8 @@
-CMakeFiles/splitgram.dir/includes/home.cc.o: \
- /home/injustice/Documents/projects/splitgram/includes/home.cc \
+CMakeFiles/Splitgram.dir/main.cpp.o: \
+ /home/injustice/Documents/projects/splitgram/main.cpp \
  /usr/include/stdc-predef.h \
  /home/injustice/Documents/projects/splitgram/includes/home.h \
- /usr/include/gtkmm-4.0/gtkmm/box.h \
+ /usr/include/gtkmm-4.0/gtkmm/button.h \
  /usr/include/glibmm-2.68/glibmm/ustring.h \
  /usr/lib/glibmm-2.68/include/glibmmconfig.h \
  /usr/include/glibmm-2.68/glibmm/unicode.h /usr/include/glib-2.0/glib.h \
@@ -1097,31 +1097,42 @@ CMakeFiles/splitgram.dir/includes/home.cc.o: \
  /usr/include/pangomm-2.48/pangomm/layoutline.h \
  /usr/include/pangomm-2.48/pangomm/layoutiter.h \
  /usr/include/pangomm-2.48/pangomm/glyphitem.h \
- /usr/include/gtkmm-4.0/gtkmm/orientable.h \
- /usr/include/gtkmm-4.0/gtkmm/window.h \
- /usr/include/gtkmm-4.0/gdkmm/surface.h \
- /usr/include/gtkmm-4.0/gdkmm/drag.h \
- /usr/include/gtkmm-4.0/gdkmm/device.h \
- /usr/include/gtkmm-4.0/gdkmm/popuplayout.h \
- /usr/include/gtkmm-4.0/gtkmm/native.h \
- /usr/include/gtkmm-4.0/gtkmm/root.h \
- /usr/include/gtkmm-4.0/gtkmm/shortcutmanager.h \
- /usr/include/gtkmm-4.0/gtkmm/windowgroup.h \
- /home/injustice/Documents/projects/splitgram/includes/button.h \
- /usr/include/gtkmm-4.0/gtkmm/button.h \
  /usr/include/gtkmm-4.0/gtkmm/actionable.h \
+ /usr/include/gtkmm-4.0/gtkmm/entry.h \
+ /usr/include/gtkmm-4.0/gtkmm/editable.h \
+ /usr/include/gtkmm-4.0/gtkmm/celleditable.h \
+ /usr/include/gtkmm-4.0/gtkmm/entrycompletion.h \
+ /usr/include/gtkmm-4.0/gtkmm/celllayout.h \
+ /usr/include/gtkmm-4.0/gtkmm/cellrenderer.h \
+ /usr/include/gtkmm-4.0/gtkmm/cellrenderer_generation.h \
+ /usr/include/gtkmm-4.0/gtkmm/cellrenderertext.h \
+ /usr/include/gtkmm-4.0/gtkmm/cellrendererpixbuf.h \
+ /usr/include/gtkmm-4.0/gdkmm/pixbuf.h \
+ /usr/include/gtkmm-4.0/gdkmm/pixbufformat.h \
+ /usr/include/giomm-2.68/giomm/inputstream.h \
+ /usr/include/glibmm-2.68/glibmm/priorities.h \
+ /usr/include/giomm-2.68/giomm/loadableicon.h \
+ /usr/include/gtkmm-4.0/gtkmm/cellrenderertoggle.h \
+ /usr/include/gtkmm-4.0/gtkmm/cellrendereraccel.h \
+ /usr/include/gtkmm-4.0/gtkmm/accelkey.h \
+ /usr/include/gtkmm-4.0/gtkmm/treemodel.h \
+ /usr/include/gtkmm-4.0/gtkmm/treeiter.h \
+ /usr/include/gtkmm-4.0/gtkmm/treemodelcolumn.h \
+ /usr/include/gtkmm-4.0/gtkmm/image.h \
+ /usr/include/gtkmm-4.0/gtkmm/entrybuffer.h \
+ /usr/include/giomm-2.68/giomm/menumodel.h \
+ /usr/include/gtkmm-4.0/gtkmm/box.h \
+ /usr/include/gtkmm-4.0/gtkmm/orientable.h \
  /usr/include/gtkmm-4.0/gtkmm/cssprovider.h \
  /usr/include/gtkmm-4.0/gtkmm/csssection.h \
  /usr/include/giomm-2.68/giomm/file.h \
  /usr/include/giomm-2.68/giomm/fileattributeinfolist.h \
  /usr/include/giomm-2.68/giomm/fileattributeinfo.h \
  /usr/include/giomm-2.68/giomm/fileenumerator.h \
- /usr/include/glibmm-2.68/glibmm/priorities.h \
  /usr/include/giomm-2.68/giomm/fileinfo.h \
  /usr/include/glibmm-2.68/glibmm/datetime.h \
  /usr/include/glibmm-2.68/glibmm/timezone.h \
  /usr/include/giomm-2.68/giomm/fileinputstream.h \
- /usr/include/giomm-2.68/giomm/inputstream.h \
  /usr/include/giomm-2.68/giomm/seekable.h \
  /usr/include/glibmm-2.68/glibmm/iochannel.h \
  /usr/include/giomm-2.68/giomm/fileiostream.h \
@@ -1134,4 +1145,40 @@ CMakeFiles/splitgram.dir/includes/home.cc.o: \
  /usr/include/giomm-2.68/giomm/mount.h \
  /usr/include/giomm-2.68/giomm/error.h \
  /usr/include/gtkmm-4.0/gtkmm/csslocation.h \
- /usr/include/c++/14.2.1/iostream
+ /usr/include/gtkmm-4.0/gtkmm/grid.h /usr/include/gtkmm-4.0/gtkmm/label.h \
+ /usr/include/gtkmm-4.0/gtkmm/listbox.h \
+ /usr/include/gtkmm-4.0/gtkmm/listboxrow.h \
+ /usr/include/giomm-2.68/giomm/liststore.h \
+ /usr/include/glibmm-2.68/glibmm/exceptionhandler.h \
+ /usr/include/gtkmm-4.0/gtkmm/window.h \
+ /usr/include/gtkmm-4.0/gdkmm/surface.h \
+ /usr/include/gtkmm-4.0/gdkmm/drag.h \
+ /usr/include/gtkmm-4.0/gdkmm/device.h \
+ /usr/include/gtkmm-4.0/gdkmm/popuplayout.h \
+ /usr/include/gtkmm-4.0/gtkmm/native.h \
+ /usr/include/gtkmm-4.0/gtkmm/root.h \
+ /usr/include/gtkmm-4.0/gtkmm/shortcutmanager.h \
+ /usr/include/gtkmm-4.0/gtkmm/windowgroup.h \
+ /usr/include/gtkmm-4.0/gtkmm/application.h \
+ /usr/include/giomm-2.68/giomm/application.h \
+ /usr/include/giomm-2.68/giomm/actionmap.h \
+ /usr/include/giomm-2.68/giomm/simpleaction.h \
+ /usr/include/giomm-2.68/giomm/action.h \
+ /usr/include/giomm-2.68/giomm/applicationcommandline.h \
+ /usr/include/glibmm-2.68/glibmm/variantdict.h \
+ /usr/include/glibmm-2.68/glibmm/optionentry.h \
+ /usr/include/glibmm-2.68/glibmm/optiongroup.h \
+ /usr/include/giomm-2.68/giomm/dbusconnection.h \
+ /usr/include/giomm-2.68/giomm/initable.h \
+ /usr/include/giomm-2.68/giomm/asyncinitable.h \
+ /usr/include/giomm-2.68/giomm/dbusauthobserver.h \
+ /usr/include/giomm-2.68/giomm/credentials.h \
+ /usr/include/giomm-2.68/giomm/dbusmethodinvocation.h \
+ /usr/include/giomm-2.68/giomm/dbusmessage.h \
+ /usr/include/giomm-2.68/giomm/unixfdlist.h \
+ /usr/include/giomm-2.68/giomm/dbusintrospection.h \
+ /usr/include/giomm-2.68/giomm/dbussubtreevtable.h \
+ /usr/include/giomm-2.68/giomm/dbusinterfacevtable.h \
+ /usr/include/giomm-2.68/giomm/notification.h \
+ /usr/include/giomm-2.68/giomm/menu.h \
+ /usr/include/giomm-2.68/giomm/menuitem.h

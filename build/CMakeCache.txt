@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=splitgram
+CMAKE_PROJECT_NAME:STATIC=Splitgram
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -283,15 +283,6 @@ pkgcfg_lib_GTKMM_sigc-3.0:FILEPATH=/usr/lib/libsigc-3.0.so
 
 //Path to a library.
 pkgcfg_lib_GTKMM_vulkan:FILEPATH=/usr/lib/libvulkan.so
-
-//Value Computed by CMake
-splitgram_BINARY_DIR:STATIC=/home/injustice/Documents/projects/splitgram/build
-
-//Value Computed by CMake
-splitgram_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-splitgram_SOURCE_DIR:STATIC=/home/injustice/Documents/projects/splitgram
 
 
 ########################
