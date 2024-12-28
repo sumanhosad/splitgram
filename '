@@ -1,0 +1,65 @@
+#include "../includes/home.h"
+#include "gtkmm/enums.h"
+
+Home::Home() {
+  // Set up main container
+  set_title("Splitgram");
+  set_default_size(800, 600);
+  add_css_class("mBox");
+
+  mBox.set_size_request(800, 600);
+  mBox.set_orientation(Gtk::Orientation::VERTICAL);
+
+  // setting up the grid
+  mGrid.set_row_homogeneous(true);
+  mGrid.set_column_homogeneous(true);
+  mGrid.add_css_class("mBox");
+
+  // configure topBarBox
+  topBarBox.set_spacing(10); // Add space between the buttons
+  topBarBox.set_size_request(800, 100);
+  mGrid.set_size_request(800, 100);
+
+  // Set weights for the grid rows and columns to control percentage size
+  mGrid.set_row_spacing(0); // No extra space between rows
+  mGrid.set_expand(true);   // Make mGrid expand to fit its container
+  mGrid.set_hexpand(true);  // Horizontal expansion
+  mGrid.set_vexpand(false);
+
+  // attaching the items
+  mGrid.attach(searchButton, 2, 0);
+  mGrid.attach(topLabel, 1, 0);
+  mGrid.attach(profileButton, 0, 0);
+
+  // top bar styling
+  searchButton.add_css_class("searchButton");
+  topLabel.add_css_class("topLabel");
+  profileButton.add_css_class("profileButton");
+
+  // Add the grid (containing the buttons) to the topBarBox
+  topBarBox.append(mGrid);
+
+  // Add topBarBox to the main container (mBox)
+  mBox.append(topBarBox);
+
+  // Configure chatList to expand below topBarBox
+  chatList.add_css_class("chatList");
+  chatList.set_vexpand(true); // Allow chatList to take the remaining space
+  chatList.set_hexpand(true); // Allow chatList to expand horizontally
+
+  mBox.append(chatList);
+
+  // Set the main container (mBox) as the window's child
+  set_child(mBox);
+}
+
+Home::~Home() {}
+
+// Helper function to set margins for any button
+void set_button_margins(Gtk::Button &button, int margin_top, int margin_bottom,
+                        int margin_start, int margin_end) {
+  button.set_margin_top(margin_top);
+  button.set_margin_bottom(margin_bottom);
+  button.set_margin_start(margin_start);
+  button.set_margin_end(margin_end);
+}

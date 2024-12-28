@@ -25,6 +25,7 @@ private:
   Gtk::Entry searchBox;
   Gtk::Button searchButton{"$"};
   Gtk::Button profileButton{"="};
+  Gtk::Label topLabel{""};
 
   Gtk::Button nChatButton{"+"};
   Gtk::ListBox chatList{};
@@ -40,5 +41,4 @@ protected:
   void onProfile();
   void onNewChatB();
 };
-
 #endif // HOME_H

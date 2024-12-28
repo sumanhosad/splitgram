@@ -1,6 +1,11 @@
-.mBox {
-  background-color: #141414;
+.home {
+  background-color: #000000;
 }
-.topBarBox {
-  background-color: #3c3c3c;
+.home mGrid {
+  background-color: #141414;
+  color: #282828;
+}
+
+.home profileButton {
+  color: #141414;
 }
