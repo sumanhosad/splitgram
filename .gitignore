@@ -5,4 +5,4 @@
 *.o
 
 #dont add the builds
-/build/CmakeFiles/
+build/CmakeFiles/

@@ -1,3 +1,0 @@
-/home/injustice/Documents/projects/splitgram/build/CMakeFiles/Splitgram.dir
-/home/injustice/Documents/projects/splitgram/build/CMakeFiles/edit_cache.dir
-/home/injustice/Documents/projects/splitgram/build/CMakeFiles/rebuild_cache.dir
