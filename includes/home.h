@@ -27,8 +27,11 @@ private:
   Gtk::Button profileButton{"="};
   Gtk::Label topLabel{""};
 
-  Gtk::Button nChatButton{"+"};
+  // chatlis
   Gtk::ListBox chatList{};
+
+  // newchat
+  Gtk::Button nChatButton{"+"};
   Gtk::Box bottomBox{Gtk::Orientation::HORIZONTAL};
 
   ;

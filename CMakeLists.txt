@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(includes)
 
 #add executables
-add_executable(Splitgram main.cpp src/home.cc)
+add_executable(Splitgram app.cpp src/home.cc)
 
 # Find and link GTKMM
 find_package(PkgConfig REQUIRED)

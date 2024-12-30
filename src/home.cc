@@ -7,7 +7,7 @@ Home::Home() {
   set_default_size(800, 600);
   add_css_class("home");
 
-  //adding css labels
+  // adding css labels
 
   // Main box
   mBox.set_orientation(Gtk::Orientation::VERTICAL);
@@ -26,6 +26,7 @@ Home::Home() {
 
   // Configure children sizes
   profileButton.set_size_request(75, 0);
+  searchButton.set_size_request(75, 0);
   topLabel.set_expand(true);       // Allow the label to take up remaining space
   profileButton.set_expand(false); // Fixed size for the button
   searchButton.set_expand(false);  // Fixed size for the button
