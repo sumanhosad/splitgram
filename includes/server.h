@@ -1,27 +1,26 @@
 #ifndef SERVER_H
 #define SERVER_H
 
-#include <cstdlib>      // For std functions like exit()
-#include <iostream>     // For input/output operations
-#include <netinet/in.h> // For sockaddr_in structure
-#include <sys/socket.h> // For socket functions
-#include <unistd.h>     // For read and close system calls
+#include <arpa/inet.h> // For socket functions (bind, listen, accept)
+#include <cstring>     // For memset
+#include <iostream>
+#include <signal.h> // For signal handling (e.g., Ctrl+C to stop the server)
+#include <thread>   // For multithreading to handle concurrent clients
+#include <unistd.h> // For read, write, close system calls
 
 class Server {
-public:
-  // Constructor: Initializes the socket
-  Server();
-  int startServer(int port);
-  int listenServer(int port);
-  int acceptClients();
-  int handleClients(int clientSock);
-  int closeClients(int clientSock);
-
-  virtual ~Server();
-
 private:
-  int sockfd;
-  sockaddr_in sockaddr, clientSockaddr;
+  int sockfd;                 // Server socket file descriptor
+  sockaddr_in sockaddr;       // Server address structure
+  volatile sig_atomic_t stop; // Flag to control server shutdown
+
+public:
+  Server();                  // Constructor to initialize the server
+  ~Server();                 // Destructor to clean up resources
+  int startServer(int port); // Set up and start the server
+  void acceptClients();      // Main loop to handle clients
+  static void handleClient(int clientSock); // Static method for client threads
+  void shutdownServer();                    // Method to stop the server
 };
 
 #endif // SERVER_H

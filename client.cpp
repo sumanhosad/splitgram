@@ -1,41 +1,72 @@
 #include "includes/client.h"
-#include <iostream>
-#include <string>
+#include <ostream>
+
+void displayMenu() {
+  std::cout << "\n--- Client Menu ---" << std::endl;
+  std::cout << "1. Send a message to the server" << std::endl;
+  std::cout << "2. Close the connection" << std::endl;
+  std::cout << "3. Reconnect to the server " << std::endl;
+  std::cout << "4. Exit the program" << std::endl;
+  std::cout << "Enter your choice: ";
+}
 
 int main(int argc, char *argv[]) {
-  if (argc != 3) {
-    std::cerr << "Usage: " << argv[0] << " <host> <port>" << std::endl;
-    return EXIT_FAILURE;
-  }
-
-  std::string host = argv[1];
-  int port = std::stoi(argv[2]);
-
   Client client;
-  if (client.connectToServer(host, port) != 0) {
-    return EXIT_FAILURE;
+  std::string serverIP = "127.0.0.1"; // IP address of the server
+  int port = std::atoi(argv[2]);      // Port number of the server
+
+  // Connect to the server
+  if (client.connectToServer(serverIP, port) < 0) {
+    return -1;
   }
 
-  std::string message;
+  int choice;
   while (true) {
-    std::cout << "Enter message (type 'exit' to quit): ";
-    std::getline(std::cin, message);
+    displayMenu();
+    std::cin >> choice;
+    std::cin.ignore(); // Clear the newline character from the input buffer
 
-    if (message == "exit") {
+    switch (choice) {
+    case 1: {
+      // Send a message to the server
+      if (!client.isConnected()) {
+        std::cout << "Not connected to the server. Please reconnect."
+                  << std::endl;
+        break;
+      }
+
+      std::string message;
+      std::cout << "Enter message to send: ";
+      std::getline(std::cin, message);
+      client.sendMessage(message);
+
+      // Receive the server's response
+      client.receiveMessage();
       break;
     }
-
-    if (client.sendMessage(message) != 0) {
+    case 2:
+      // Close the connection
+      client.closeConnection();
       break;
-    }
-
-    std::string response = client.receiveMessage();
-    if (response.empty()) {
+    case 3:
+      // reConnect to the server
+      if (client.connectToServer(serverIP, port) < 0) {
+        std::cout << "Not connected to the server. Please reconnect.";
+        return -1;
+      } else {
+        std::cout << "ReConnected to the server.";
+      }
       break;
-    }
 
-    std::cout << "Server response: " << response << std::endl;
+    case 4:
+      // Exit the program
+      client.closeConnection();
+      std::cout << "Exiting the program." << std::endl;
+      return 0;
+    default:
+      std::cout << "Invalid choice. Please try again." << std::endl;
+    }
   }
 
-  return EXIT_SUCCESS;
+  return 0;
 }

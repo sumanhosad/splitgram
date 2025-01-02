@@ -1,33 +1,26 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-#include <arpa/inet.h> // For sockaddr_in and inet_pton
-#include <cstring>
-#include <iostream>
+#include <arpa/inet.h> // For inet_pton
+#include <cstring>     // For memset
+#include <iostream>    // For standard I/O
 #include <string>
-#include <sys/socket.h>
-#include <unistd.h> // For read and close system calls
-                    //
+#include <unistd.h>
+
 class Client {
-public:
-  // Constructor
-  Client();
-
-  // Connects to the server at the specified host and port
-  int connectToServer(const std::string &host, int port);
-
-  // Sends a message to the server
-  int sendMessage(const std::string &message);
-
-  // Receives a message from the server
-  std::string receiveMessage();
-
-  // Destructor: Cleans up resources
-  ~Client();
-
 private:
-  // Socket file descriptor
-  int sockfd;
+  int sockfd;                    // Socket descriptor for the client
+  struct sockaddr_in serverAddr; // Server address structure
+  bool connected;                // Flag to check if the client is connected
+
+public:
+  Client();                                               // Constructor
+  ~Client();                                              // Destructor
+  int connectToServer(const std::string &host, int port); // Connect to server
+  void sendMessage(const std::string &message);           // Send a message
+  void receiveMessage();                                  // Receive a message
+  void closeConnection();   // Close the connection
+  bool isConnected() const; // Check if connected
 };
 
-#endif // CLIENT_H
+#endif
