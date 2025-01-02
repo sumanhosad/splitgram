@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
 
   auto css_provider = Gtk::CssProvider::create();
   css_provider->load_from_path(
-      "/home/injustice/Documents/projects/splitgram/assets/styles/style.css");
+      "/home/injustice/Documents/splitgram/assets/styles/style.css");
 
   Gtk::StyleContext::add_provider_for_display(
       Gdk::Display::get_default(), css_provider,
