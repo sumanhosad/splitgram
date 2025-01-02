@@ -14,7 +14,6 @@ include_directories(includes)
 add_executable(Splitgram app.cpp src/home.cc)
 add_executable(server server.cpp src/server.cc)
 add_executable(client client.cpp src/client.cc)
-add_executable(test server.cpp src/test.cc)
 
 # Find and link GTKMM
 find_package(PkgConfig REQUIRED)
