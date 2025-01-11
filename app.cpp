@@ -1,4 +1,3 @@
-// File: main.cpp
 #include "includes/home.h"
 #include <gtkmm/application.h>
 
